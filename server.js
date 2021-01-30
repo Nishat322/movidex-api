@@ -2,17 +2,16 @@
 'use strict';
 const express = require('express');
 const morgan = require('morgan');
+const data = require('./moviedata');
 
 const app = express();
 app.use(morgan('dev'));
 
-app.use((req, res) => {
-    res.send('Hello, world!');
-});
+function handleGetMovie (req,res){
+    res.json(data);
+}
 
-app.get('movie', (req,res) => {
-
-});
+app.get('/movie', handleGetMovie);
 
 const PORT = 8000;
 
