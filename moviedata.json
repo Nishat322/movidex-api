@@ -1,7 +1,4 @@
-/* eslint-disable quotes */
-/* eslint-disable indent */
-'use strict';
-module.exports = [
+[
     {
       "filmtv_ID": 2,
       "film_title": "Bugs Bunny's Third Movie: 1001 Rabbit Tales",
@@ -1058,4 +1055,4 @@ module.exports = [
       "avg_vote": 6,
       "votes": 3
     }
-];
+]
